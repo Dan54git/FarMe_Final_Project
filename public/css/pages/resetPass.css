@@ -1,0 +1,131 @@
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../images/singupBG.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Bree-Serif";
+  font-size: 2.5em;
+  margin: 10px 0 0;
+}
+
+.form-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #e2f5eb9b;
+  margin: 5px;
+}
+
+.form-contain .title {
+  color: #586068;
+  font-family: Arvo;
+  font-size: 1.47rem;
+  margin-bottom: 30px;
+}
+
+.resetPass-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.resetPass-form div {
+  width: 100%;
+}
+
+.resetPass-form label {
+  font-family: Domine;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-inline-start: 5px;
+}
+
+.resetPass-form input {
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  padding: 5px 10px;
+  font-size: 1em;
+  width: 100%;
+}
+
+.submit-btn {
+  background-color: transparent;
+  border: none;
+  color: #0038ff;
+  font-family: Domine;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #cc0000;
+  text-decoration: none;
+  height: 1.1875em;
+}
+
+input.invalid {
+  border-color: #b00000;
+}
+
+input.valid {
+  border-color: #00700a;
+}
+
+.login-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.login-contain p {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.login-contain a {
+  margin-top: 20px;
+  font-family: Domine;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: black;
+  text-decoration: none;
+}
+
+.login-contain a:hover {
+  text-decoration: underline;
+}
+
+.send-email-contain {
+  background-color: #e2f5eb9b;
+  margin-top: 30px;
+  width: 600px;
+  max-width: 100vw;
+  padding: 20px;
+  border-radius: 10px;
+}
+.send-email-contain p {
+  color: #586068;
+  font-family: Arvo;
+  font-size: 1.47rem;
+}

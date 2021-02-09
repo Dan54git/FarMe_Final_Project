@@ -1,0 +1,101 @@
+.main-contian {
+  padding: 10px 20px;
+}
+
+main h1 {
+  color: #343f4b;
+  font-family: Bree Serif;
+  font-size: 65px;
+  font-style: italic;
+  line-height: 84px;
+  width: 532px;
+  margin-bottom: 30px;
+}
+
+.from-group {
+  margin-bottom: 10px;
+}
+
+main .details-form {
+  padding: 0 20px;
+  width: 650px;
+  max-width: 100%;
+}
+.input-container {
+  height: 78px;
+}
+
+.details-form label {
+  color: #47525e;
+  font-family: Montserrat-Medium;
+  font-size: 1.875em;
+  text-transform: capitalize;
+  align-self: flex-start;
+}
+
+.details-form label::after {
+  content: ":";
+}
+
+.details-form .edit-icon {
+  height: 30px;
+  width: 30px;
+}
+.details-form .err-msg {
+  color: #d8000c;
+  word-wrap: break-word;
+  width: 340px;
+  max-width: 100%;
+  font-size: 0.9rem;
+  margin: 5px 0 0;
+}
+
+.details-form .input-detail {
+  border: 3px solid #000000;
+  border-radius: 7px;
+  padding: 5px 10px;
+  margin-inline-end: 10px;
+  width: 300px;
+  max-width: 100%;
+  font-size: 1.2em;
+}
+
+.buttons-panel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.buttons-panel .btn-form {
+  border: none;
+  border-radius: 5px;
+  padding: 10;
+  text-decoration: none;
+  color: black;
+  font-family: Montserrat-Medium;
+  font-size: 1.7rem;
+  padding: 5px 10px;
+  transition: color 350ms, background-color 350ms;
+  text-transform: capitalize;
+}
+
+.buttons-panel .btn-submit {
+  color: #ffffff;
+  background-color: #13ce66;
+  margin-inline-end: 10px;
+}
+
+.buttons-panel .btn-submit:hover {
+  color: #e2e2e2;
+  background-color: #13b85d;
+}
+
+.buttons-panel .btn-cancel {
+  color: #ffffff;
+  background-color: #eb3939;
+}
+
+.buttons-panel .btn-cancel:hover {
+  color: #ffffff;
+  background-color: #cf3838;
+}

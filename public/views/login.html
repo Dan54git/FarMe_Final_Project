@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarMe</title>
+
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/helpers.css">
+    <link rel="stylesheet" href="/css/navBar.css">
+    <link rel="stylesheet" href="/css/pages/login.css">
+</head>
+
+<body>
+    <header class="nav-contain">
+        <div class="header-row">
+            <a href="/" class="logo">
+                <p>FarMe</p>
+                <p class="title-logo">From the farms to me</p>
+            </a>
+            <nav class="nav top-nav"></nav>
+        </div>
+        <div class="bottom-nav header-row">
+            <nav>
+                <ul class="clean-list">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-btn" onclick="onDropdown()">
+                            <img src="images/navBarIcons/store.svg" />
+                            Store
+                        </a>
+                        <ul class="dropdown-list clean-list flex column">
+                            <li>
+                                <a href="/store?type=vegetable">Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="/store?type=fruit">Fruits</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <form class="search-form flex align-items-center">
+                            <label>Search</label>
+                            <div class="search flex align-items-center">
+                                <img src="images/navBarIcons/search.png" />
+                                <input class="search-input" type="text" name="q" placeholder="Search" />
+                            </div>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="/about">About us</a>
+                    </li>
+                    <div class="profileNav"></div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Login</h1>
+
+        <form class="login-form">
+            <div class="msgContain"></div>
+            <input class="email" type="email" name="email" placeholder="Email" required />
+            <input class="password" type="password" name="password" placeholder="Password" required />
+            <button type="submit">Login</button>
+
+            <div class="forget-pass flex">
+                <p>Forget the password:</p> <a href="/resetpassword">Reset password</a>
+            </div>
+            <div class="dont-account">
+                <p>Don't have an account?</p><a href="/signup">sign-up!</a>
+            </div>
+        </form>
+
+    </main>
+
+    <script src="./lib/jquery.js"></script>
+    <script src="./lib/axios.js"></script>
+    <script type="module" src="./js/controllers/navBar.js"></script>
+    <script type="module" src="./js/controllers/login.js"></script>
+</body>
+
+</html>

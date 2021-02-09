@@ -1,0 +1,48 @@
+/* Flex */
+.flex {
+  display: flex;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.justify-content-center {
+  justify-content: center;
+}
+
+.flex.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.flex.align-items-center {
+  align-items: center;
+}
+
+/* List */
+.clean-list {
+  list-style: none;
+}
+
+/* Modal / Screen */
+.screen {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.display-sticky {
+  position: sticky;
+}
+
+.bold {
+  font-weight: bold;
+}

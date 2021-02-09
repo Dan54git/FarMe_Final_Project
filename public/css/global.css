@@ -1,0 +1,58 @@
+/* Fonts */
+/* Playfair Display */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+/* Domine */
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400&display=swap");
+
+/* Arvo */
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
+@font-face {
+  font-family: "Montserrat-Medium-Italic";
+  src: url(../fonts/Montserrat/Montserrat-MediumItalic.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: "Bree-Serife";
+  src: url(../fonts/BreeSerif/BreeSerifRegular.ttf);
+}
+
+body,
+html {
+  margin: 0;
+}
+body {
+  font-family: "Montserrat-Medium";
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}

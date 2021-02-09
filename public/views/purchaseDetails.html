@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarMe</title>
+
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/helpers.css">
+    <link rel="stylesheet" href="/css/navBar.css">
+    <link rel="stylesheet" href="/css/pages/purchaseDetails.css">
+</head>
+
+<body>
+    <header class="nav-contain">
+        <div class="header-row">
+            <a href="/" class="logo">
+                <p>FarMe</p>
+                <p class="title-logo">From the farms to me</p>
+            </a>
+            <nav class="nav top-nav"></nav>
+        </div>
+        <div class="bottom-nav header-row">
+            <nav>
+                <ul class="clean-list">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-btn" onclick="onDropdown()">
+                            <img src="/images/navBarIcons/store.svg" />
+                            Store
+                        </a>
+                        <ul class="dropdown-list clean-list flex column">
+                            <li>
+                                <a href="/store?type=vegetable">Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="/store?type=fruit">Fruits</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <form class="search-form flex align-items-center">
+                            <label>Search</label>
+                            <div class="search flex align-items-center">
+                                <img src="images/navBarIcons/search.png" />
+                                <input class="search-input" type="text" name="q" placeholder="Search" />
+                            </div>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="/about">About us</a>
+                    </li>
+                    <div class="profileNav"></div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-contain" style="display: none;">
+
+        <h1 class="title-page">Order details</h1>
+        <section>
+            <button class="btn btn-delete">Delete purchase</button>
+            <a href="/purchases" class="btn btn-back">Back</a>
+        </section>
+        <section class="delivery-details contain">
+            <h2 class="title-section">Delivery details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mail</th>
+                        <th>Phone</th>
+                        <th>Delivery Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dan behar</td>
+                        <td>sdfsdfsdf,sfsdf sdfsdf</td>
+                        <td>dan@gmail.com</td>
+                        <td>09-5544-321</td>
+                        <td>27/12/90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="items">
+            <h2 class="title-section">Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Unit</th>
+                        <th>Total price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="\images\products\apple.jpg" /></td>
+                        <td>cummeber</td>
+                        <td>2.90</td>
+                        <td>3</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="summery">
+            <h2 class="title-section">Summery</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Delivery price</th>
+                        <th>Total item price</th>
+                        <th>Total price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>cummeber</td>
+                        <td>2.90</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="/lib/jquery.js"></script>
+    <script src="/lib/axios.js"></script>
+    <script type="module" src="/js/controllers/navBar.js"></script>
+    <script type="module" src="/js/controllers/purchaseDetails.js"></script>
+</body>
+
+</html>

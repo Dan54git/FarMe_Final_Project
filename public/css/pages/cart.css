@@ -1,0 +1,135 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+
+h1 {
+  font-family: Bree-Serif;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+table {
+  border-collapse: collapse;
+  width: 1800px;
+  margin: 10px;
+  max-width: 90vw;
+}
+
+td,
+th {
+  text-align: center;
+  padding: 10px;
+}
+
+td {
+  border: 2px solid #eee;
+  border-style: solid none;
+  font-size: 1.2em;
+}
+
+th {
+  font-size: 1.5em;
+  padding-bottom: 20px;
+}
+
+.btn-remove {
+  padding: 16px 32px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  background-color: white;
+  border: 2px solid #f44336;
+  border-radius: 5px;
+}
+
+.btn-remove:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.item-img img {
+  max-width: 150px;
+}
+.item-img .product-name {
+  font-weight: bold;
+}
+
+.order-summery {
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  padding: 25px;
+  width: 600px;
+  margin-top: 30px;
+}
+.order-summery h2 {
+  margin-bottom: 30px;
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+.order-summery .row {
+  display: flex;
+  font-size: 1.25em;
+}
+.order-summery .row {
+  margin-bottom: 15px;
+}
+.order-summery .title {
+  font-weight: bold;
+  margin-inline-end: 10px;
+}
+
+.order-summery .title::after {
+  content: ":";
+}
+
+.order-summery .contain-total-price {
+  align-items: center;
+  margin: 50px 0 20px;
+  color: green;
+}
+.contain-total-price .title {
+  font-size: 1.25em;
+}
+
+.contain-total-price .total-price {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.order-summery .btn-continue {
+  padding: 20px 42px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  background-color: white;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+}
+
+.btn-continue:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.empty-cart-title {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.img-cart {
+  width: 300px;
+  max-width: 100%;
+}

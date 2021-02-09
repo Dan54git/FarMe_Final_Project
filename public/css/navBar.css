@@ -1,0 +1,155 @@
+.nav-contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2c9c00;
+  font-family: "Bree-Serif";
+  color: #fff;
+}
+
+.nav-contain .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 4.0625em;
+  line-height: 65px;
+}
+
+.nav-contain .title-logo {
+  padding-inline-start: 15px;
+  font-size: 0.5em;
+  color: white;
+  width: 20.42rem;
+  line-height: 45px;
+}
+
+.nav-contain .header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 5px 15px;
+}
+
+.nav-contain .bottom-nav {
+  padding: 10px;
+  background-color: #6a3004;
+  justify-content: flex-end;
+}
+.nav-contain .top-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-inline-start: 100px;
+}
+.nav-contain nav {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-contain a,
+.nav-contain .btn-logout {
+  display: flex;
+  align-items: center;
+  font-family: "Bree-Serif";
+  font-size: 1.25em;
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+
+.nav-contain a img {
+  width: 30px;
+}
+
+.nav-contain nav a {
+  margin: 0 15px;
+  width: fit-content;
+}
+
+.nav-contain a:hover:not(.logo),
+.nav-contain .btn-logout:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+.nav-contain .items-count {
+  margin-inline-start: 5px;
+}
+
+.nav-contain ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+.nav-contain ul img {
+  width: 20px;
+  margin-inline-end: 5px;
+}
+
+.nav-contain form {
+  margin: 0 20px;
+}
+.nav-contain form label {
+  font-size: 1.25em;
+  margin-inline-end: 5px;
+}
+.nav-contain form label::after {
+  content: ":";
+}
+.nav-contain form .search {
+  border: 1px solid black;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.nav-contain .search img {
+  width: 20px;
+}
+
+.nav-contain .search input {
+  border: none;
+  font-size: 16px;
+}
+
+.nav-contain .dropdown {
+  position: relative;
+}
+
+.nav-contain .dropdown-list {
+  position: absolute;
+  left: 2px;
+  top: 40px;
+  background-color: #0d5828;
+  margin: 0;
+  padding: 10px 0px;
+  visibility: hidden;
+}
+
+.nav-contain .dropdown-list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.nav-contain .show-drop .dropdown-btn {
+  color: #ffd700;
+}
+
+.nav-contain .show-drop .dropdown-btn:after {
+  content: "\25B2";
+}
+
+.nav-contain .dropdown-btn:after {
+  content: "\25BC";
+  color: #fff;
+}
+.nav-contain .dropdown-btn:after:hover {
+  color: #fff;
+}
+
+.nav-contain .show-drop .dropdown-list {
+  visibility: visible;
+}
